@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'share/css/material_view.css' %}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/css/animate.min.css"
+    />
+    <style>
+      .background-image {
+        height: 370px;
+        background: black;
+        margin-top: 1px;
+        padding: 0px;
+        background-size: 100% 100%;
+        background-image: url('{% static "share/images/web.jpg" %}');
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="margin-right: 0px; margin-left: 0px">
+        <div class="col-lg-12 background-image">
+          <a href="/share/"
+            ><i
+              class="fa fa-arrow-left"
+              style="text-align: right; margin-top: 5px; margin-left: 5px; color: black"
+            ></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="row" style="margin-right: 0px; margin-left: 0px">
+        <div class="col-lg-9" style="background: no-repeat; height: 35px; margin-top: 2px">
+          <button style="margin-top: 10px; margin-left: 30px">{{user.username}}</button>
+        </div>
+        <div class="col-lg-3" style="background: no-repeat; height: 35px; margin-top: 2px">
+          <button style="margin-top: 10px; margin-left: 30px">
+            <a href="/share/book_image">Share Your Notes In ShareCare</a>
+          </button>
+        </div>
+      </div>
+
+      {% for data in dataset %}
+      <div class="container">
+        <div class="row sh" style="background-color: white">
+          <div class="col-lg-3">
+            <a href="/share/material_popup/{{ data.id }}">
+              <img src="media/{{ data.Material_Img }}" style="width: 50%; height: 90px" />
+            </a>
+          </div>
+
+          <div class="col-lg-2">
+            <p>{{ data.name }}</p>
+          </div>
+
+          <div class="col-lg-2">
+            <p>{{ data.date_of_post }}</p>
+          </div>
+
+          <div class="col-lg-2">
+            <p>{{ data.location }}</p>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-lg-4 col-sm-4 col-xs-4">
+                <a href="/share/more" class="view" title="View" data-toggle="tooltip"
+                  ><i class="material-icons">&#xE417;</i></a
+                >
+              </div>
+
+              <div class="col-lg-4 col-sm-4 col-xs-4">
+                <a
+                  href="/share/update_material/{{ data.id }}"
+                  class="edit"
+                  title="Edit"
+                  data-toggle="tooltip"
+                  ><i class="material-icons">&#xE254;</i></a
+                >
+              </div>
+
+              <div class="col-lg-4 col-sm-4 col-xs-4">
+                <a
+                  href="/share/delete_material/{{ data.id }}"
+                  class="delete"
+                  title="Delete"
+                  data-toggle="tooltip"
+                  ><i class="material-icons">&#xE872;</i></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

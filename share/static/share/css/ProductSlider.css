@@ -1,0 +1,232 @@
+<style type="text/css">
+ 
+
+  /* Make the image fully responsive */
+  .carousel-inner{
+    text-align: center;
+  }
+ button{
+      position: relative; border:none;transition: .8s ease-in; z-index: 1;background: skyblue;
+  
+    }
+    .btn-2:hover{
+      border: 2px solid #ff96ad;
+      color: #ff96ad;
+      background-color: #17181c;
+
+        }
+    button:: before,
+    button::after{
+      position: absolute;
+      
+      z-index: -1;
+      
+    } 
+   #one {
+      margin-left:0px;margin-right:0px;
+    }
+    #two{
+      height:auto;background:yellowgreen;margin-top: 10px ;box-shadow: 10px 5px 15px 10px; color: black;
+    }
+    #three{
+      height:140px;background: yellowgreen;
+    }
+    #four{
+      font-size: 30px; font-family:cursive;
+    }
+    #five{
+      font-size:20px;
+    }
+    #six{
+      padding-top: 10px;background: yellowgreen;
+    }
+    .for{
+      demo
+      }
+      #seven{
+        height:240px;
+      }
+      #eight{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 10px;
+      }
+      #nine{
+
+          padding-top: 10px; font-family:italic;font-size: 20px; text-align: center;
+      }
+      #ten{
+         height:190px;
+      }
+      #eleven{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #twelve{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirteen{
+         height:190px;
+      }
+      #fourteen{
+        box-shadow: 0px 0px 5px 5px orange;margin-left:0px;
+      }
+      #fifteen{
+         padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixteen{
+        height:190px;
+      }
+      #seventeen{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;margin-left: 3px;
+      }
+      #eighteen{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #nineteen{
+        height:190px;
+      }
+      #twenty{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: -4px
+      }
+      #twenty-one{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-two{
+        height:240px;
+      }
+      #twenty-three{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #twenty-four{
+         padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-five{
+        padding-top: 10px;
+      }
+      #twenty-six{
+          height:240px;
+      }
+      #twenty-seven{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 7px;
+      }
+      #twenty-eight{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-nine{
+        height:240px;
+      }
+      #thirty{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 2px;
+      }
+      #thirty-one{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-two{
+        height:240px;
+      }
+      #thirty-three{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #thirty-four{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-five{
+        height:240px;
+      }
+      #thirty-six{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #thirty-seven{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-eight{
+        height:240px;
+      }
+      #thirty-nine{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -3px;
+      }
+      #fourty{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-one{
+        height:240px;
+      }
+      #fourty-two{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -7px;
+      }
+      #fourty-three{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-four{
+        padding-top: 10px;
+      }
+      #fourty-five{
+        height:240px;
+      }
+      #fourty-six{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 7px;
+      }
+      #fourty-seven{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-eight{
+        height:240px;
+      }
+      #fourty-nine{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 2px;
+      }
+      #fifty{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-one{
+        height:240px;
+      }
+      #fifty-two{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #fifty-three{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-four{
+        height:240px;
+      }
+      #fifty-five{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #fifty-six{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-seven{
+        height:240px;
+      }
+      #fifty-eight{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -3px;
+      }
+      #fifty-nine{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixty{
+        height:240px;
+      }
+      #sixty-one{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -7px;
+      }
+      #sixty-two{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixty-three{
+        margin-left: 0px; margin-right: 0px;margin-top: 20px;
+      }
+      #sixty-four{
+        height:5px; background: yellowgreen;
+      }
+      #sixty-five{
+        height:60px; background: yellowgreen;text-align: center;
+      }
+      #sixty-six{
+        height:30px;width:70%
+      }
+      #sixty-seven{
+        height:5px;background: yellowgreen;
+      }
+
+
+</style>

@@ -1,0 +1,541 @@
+ <style type="text/css">
+ /* ------------------------------------------------------------ NAVBAR -----------------------------------------------*/ 
+      #n-two{
+        margin-left: 0px;padding-left:0px;margin-right: 0px;padding-right: 0px;
+      }
+      #n-three{
+        margin-left: 0px;padding-left:0px;margin-right: 0px;padding-right: 0px;
+      }
+      #n-four{
+        width:100%;margin-left: 10px;height:30px;padding-top: 0px;
+      }
+      #n-five{
+         width:30px;height: 30px;padding-left: 0px;padding-top: 0px;
+      }
+                           /* ----------------------------------------------- SLIDE SHOW -----------------------------------------------*/
+      #s-one{
+        margin-left: 0px;margin-right: 0px;
+      }
+      #s-two {
+        height: 400px;margin-top:-20px
+      }
+      #s-three{
+        width:100%;height: 400px;
+      }
+      #s-four{
+        width:100%;height: 400px;
+      }
+      #s-five{
+        width:100%;height: 400px;
+      }
+                /* ---------------------------------------------- STATIC PAGE -----------------------------------------------*/
+        .button1{
+      position: relative; border:none;transition: .4s ease-in; z-index: 1;background: green;
+    }
+    .bton-2:hover{
+      box-shadow: inset -10.5em 0 0 0 orange,inset 10.5em 0 0 0 orange;
+    }
+    .button1:: before,
+    .button1::after{
+      position: absolute;
+      content: "";
+      z-index: -1;
+
+    }
+
+    #u-one{
+      box-shadow: 10px 5px 15px 10px;height: auto;background: yellowgreen;
+    }
+    #u-two{
+       margin-right: 0px;margin-left: 0px; margin-top: 10px;
+    }
+    #u-three{
+      height:70px;background:yellowgreen;margin-top: 0px;
+    }
+    #u-four{
+      margin-left: 10px;  font-family:  cursive;
+    }
+    #u-five{
+      margin:0px;padding:0px;text-align: center;
+    }
+    #u-six{
+      height: 300px;background: yellowgreen; text-align: center;
+    }
+    #u-seven{
+       box-shadow: 0px 0px 5px 5px black;margin-left: 5px;margin-top: 20px;
+    }
+    #u-eight{
+      font-family: monospace; font-size: 20px; margin-top: 5px; margin-left: 20px;
+    }
+    #u-nine{
+      height: 25px; width: 100px;margin-top: 0px; margin-left:10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-ten{
+      height: 300px;background: yellowgreen;margin-left: 0px; text-align: center;
+    }
+    #u-eleven{
+       box-shadow: 0px 0px 5px 5px black;margin-left:0px;margin-top: 20px;
+    }
+    #u-twelve{
+      font-family: monospace; font-size: 20px; margin-top: 5px; text-align: center  ;margin-left: -10px;
+    }
+    #u-thirteen{
+      height: 25px; width: 100px;margin-top: 0px; margin-left:10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-fourteen{
+      height: 300px;background: yellowgreen;margin-left: 0px; text-align: center;
+    }
+    #u-fifteen{
+       box-shadow: 0px 0px 5px 5px black;margin-left:0px;margin-top: 20px;
+    }
+    #u-sixteen{
+      font-family: monospace; font-size: 20px; margin-top: 5px; text-align: center  ;margin-left: -10px;
+    }
+    #u-seventeen{
+      height: 25px; width: 100px;margin-top: 0px; margin-left: 10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-eighteen{
+      height: 300px;background: yellowgreen;margin-left: 0px; text-align:center;
+    }
+    #u-nineteen{
+       box-shadow: 0px 0px 5px 5px black;margin-left:0px;margin-top: 20px;
+    }
+    #u-twenty{
+      font-family: monospace; font-size: 20px; margin-top: 5px; text-align: center  ;margin-left: -10px;
+    }
+    #u-twenty-one{
+      height: 25px; width: 100px;margin-top: 0px; margin-left: 10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-twenty-two{
+      height: 300px;background: yellowgreen;margin-left: 0px;text-align: center;
+    }
+    #u-twenty-three{
+       box-shadow: 0px 0px 5px 5px black;margin-left:0px;margin-top: 20px;
+    }
+    #u-twenty-four{
+      font-family: monospace; font-size: 20px; margin-top: 5px; text-align: center  ;margin-left: -10px;
+    }
+    #u-twenty-five{
+      height: 25px; width: 100px;margin-top: 0px; margin-left:10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-twenty-six{
+      height: 300px;background: yellowgreen;margin-left: 0px;text-align: center;
+    }
+    #u-twenty-seven{
+       box-shadow: 0px 0px 5px 5px black;margin-left:0px;margin-top: 20px;
+    }
+    #u-twenty-eight{
+      font-family: monospace; font-size: 20px; margin-top: 5px; text-align: center  ;margin-left: -10px;
+    }
+    #u-twenty-nine{
+      height: 25px; width: 100px;margin-top: 0px; margin-left: 10px; background-origin: inherit; background:lightcoral;
+    }
+    #u-thirty{
+      margin:0px;padding: 0px;
+    }
+    #u-thirty-one{
+      background-color:yellowgreen; height:50px;text-align: center;
+    }
+    #u-thirty-two{
+      height:30px;width:10%;margin-top: 10px; color: white;font-size: 20px;
+    }
+                                    /*-------------------------------- PRODUCT SLIDER ------------------------------*/
+/* Make the image fully responsive */
+  .carousel-inner{
+    text-align: center;
+  }
+ button{
+      position: relative; border:none;transition: .8s ease-in; z-index: 1;background: skyblue;
+  
+    }
+    .btn-2:hover{
+      border: 2px solid #ff96ad;
+      color: #ff96ad;
+      background-color: #17181c;
+
+        }
+    button:: before,
+    button::after{
+      position: absolute;
+      
+      z-index: -1;
+      
+    } 
+   #one {
+      margin-left:0px;margin-right:0px;
+    }
+    #two{
+      height:auto;background:yellowgreen;margin-top: 10px ;box-shadow: 10px 5px 15px 10px; color: black;
+    }
+    #three{
+      height:140px;background: yellowgreen;
+    }
+    #four{
+      font-size: 30px; font-family:cursive;
+    }
+    #five{
+      font-size:20px;
+    }
+    #six{
+      padding-top: 10px;background: yellowgreen;
+    }
+    .for{
+      demo
+      }
+      #seven{
+        height:240px;
+      }
+      #eight{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 10px;
+      }
+      #nine{
+
+          padding-top: 10px; font-family:italic;font-size: 20px; text-align: center;
+      }
+      #ten{
+         height:190px;
+      }
+      #eleven{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #twelve{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirteen{
+         height:190px;
+      }
+      #fourteen{
+        box-shadow: 0px 0px 5px 5px orange;margin-left:0px;
+      }
+      #fifteen{
+         padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixteen{
+        height:190px;
+      }
+      #seventeen{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;margin-left: 3px;
+      }
+      #eighteen{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #nineteen{
+        height:190px;
+      }
+      #twenty{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: -4px
+      }
+      #twenty-one{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-two{
+        height:240px;
+      }
+      #twenty-three{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #twenty-four{
+         padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-five{
+        padding-top: 10px;
+      }
+      #twenty-six{
+          height:240px;
+      }
+      #twenty-seven{
+        box-shadow: 0px 0px 5px 5px orange;margin-left: 7px;
+      }
+      #twenty-eight{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #twenty-nine{
+        height:240px;
+      }
+      #thirty{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 2px;
+      }
+      #thirty-one{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-two{
+        height:240px;
+      }
+      #thirty-three{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #thirty-four{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-five{
+        height:240px;
+      }
+      #thirty-six{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #thirty-seven{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #thirty-eight{
+        height:240px;
+      }
+      #thirty-nine{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -3px;
+      }
+      #fourty{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-one{
+        height:240px;
+      }
+      #fourty-two{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -7px;
+      }
+      #fourty-three{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-four{
+        padding-top: 10px;
+      }
+      #fourty-five{
+        height:240px;
+      }
+      #fourty-six{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 7px;
+      }
+      #fourty-seven{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fourty-eight{
+        height:240px;
+      }
+      #fourty-nine{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 2px;
+      }
+      #fifty{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-one{
+        height:240px;
+      }
+      #fifty-two{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #fifty-three{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-four{
+        height:240px;
+      }
+      #fifty-five{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: 0px;
+      }
+      #fifty-six{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #fifty-seven{
+        height:240px;
+      }
+      #fifty-eight{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -3px;
+      }
+      #fifty-nine{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixty{
+        height:240px;
+      }
+      #sixty-one{
+         box-shadow: 0px 0px 5px 5px orange;margin-left: -7px;
+      }
+      #sixty-two{
+        padding-top: 10px; font-family:italic;font-size: 20px;text-align: center
+      }
+      #sixty-three{
+        margin-left: 0px; margin-right: 0px;margin-top: 20px;
+      }
+      #sixty-four{
+        height:5px; background: yellowgreen;
+      }
+      #sixty-five{
+        height:60px; background: yellowgreen;text-align: center;
+      }
+      #sixty-six{
+        height:30px;width:70%
+      }
+      #sixty-seven{
+        height:5px;background: yellowgreen;
+      }
+
+ /* ------------------------------------------------------------ FOOTER -----------------------------------------------*/
+    .fa {
+  
+  padding-left:  0px;
+  padding-top:  6px;
+  font-size: 15px;
+  width: 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {  
+  background: #3B5998;
+  color: white; 
+  
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+#f-one{
+  margin-left:0px;margin-right:0px;margin-top: 15px;
+}
+#f-two{
+  height:237px;background:dimgrey;color:white
+}
+#f-three{
+  font-size: 18px;text-indent: 100px;
+}
+#f-four{
+  font-size: 12px;
+}
+#f-five{
+   margin:5px
+}
+#f-six{
+  
+  border-radius: 50%;
+  height: 25px;
+  margin-top: 10px;
+
+}
+#f-seven{
+	border-radius: 50%;
+	height: 25px;
+  margin-top: 10px;
+margin-left: 30px;
+}
+#f-eight{
+border-radius: 50%;
+  height: 25px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+#f-nine{
+  height:237px;background:dimgrey ;color: white;
+}
+#f-ten{
+font-size: 18px;text-indent: 120px;
+}
+#f-eleven{
+  margin-left:0px;margin-right:0px;
+}
+#f-twelve{
+  text-align: left;background:  dimgrey ;height: 5px;
+}
+#f-thirteen{
+  text-align: left;background:   dimgrey   ;height: 5px;
+}
+#f-fourteen{
+  font-size:18px;color:#1a1aff;text-align-last: justify;
+}
+#f-fifteen{
+  font-size:14px;color: black;text-align-last: justify; 30px;
+}
+#f-sixteen{
+  font-size:18px;color:#47d147;margin-left: -5px;
+}
+#f-seventeen{
+  margin:4px;font-size:18px;color: black;
+}
+#f-eighteen{
+font-size:14px;margin:-4px;color: black;
+}
+#f-nineteen{
+color:rosybrown;margin-left: -5px;
+}
+#f-twenty{
+  margin:5px;font-size:14px;color: black;
+}
+#f-twenty-one{
+  font-size:18px;color:black;margin-left: -5px;
+}
+#f-twenty-two{
+  margin:5px;font-size:14px;color: black;
+}
+#f-twenty-three{
+  height:237px;background:dimgrey;color:white;
+}
+#f-twenty-four{
+font-size: 18px;text-indent: 110px;
+}
+#f-twenty-five{
+    margin-left:0px;margin-right:0px;
+}
+#f-twenty-six{
+  text-align: left;background:  dimgrey;height: 5px;
+}
+#f-twenty-seven{
+  text-align: left;background:  dimgrey;height: 5px;
+}
+#f-twenty-eight{
+  font-size: 15px;
+}
+#f-twenty-nine{
+margin-left:-15px
+}
+#f-thirty{
+color:black;
+}
+#f-thirty-one{
+  color:black;color: black;
+}
+#f-thirty-two{
+color:black;
+}
+#f-thirty-three{
+color:black;;color: black;
+}
+#f-thirty-four{
+color:black;
+}
+#f-thirty-five{
+color:black;;color: black;
+}
+#f-thirty-six{
+color:black;
+}
+#f-thirty-seven{
+color:black;;color: black;
+}
+#f-thirty-eight{
+height:237px;background:dimgrey;color: white;
+}
+#f-thirty-nine{
+font-size: 18px;text-indent: 80px ;
+}
+#f-fourty{
+  font-size: 20px;margin:7px
+}
+#f-fourty-one{
+  margin:15px;
+}
+/*--------------------------------POP UP MODAL------------------------------*/
+
+
+    </style>
+
+  

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+{% load static %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final</title>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="{% static 'share/css/indexstyle.css' %}">
+    
+    
+   
+  </head>
+<body>
+              <!----------------------------------NAVBAR------------------------------------------>
+  
+<nav class="navbar navbar-inverse">
+  <div class="row" style="margin-left: 0px;padding-left:0px;margin-right: 0px;padding-right: 0px;">
+    <div class="col-lg-5 col-sm-6">
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="row" style="margin-left: 0px;padding-left:0px;margin-right: 0px;padding-right: 0px;">
+      <a class="navbar-brand" href="/share/">Logo</a>
+     
+  
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-7 col-sm-12">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+      
+        <li><a href="/share/book_image">Contribution</a></li>
+        <li><a href="/share/more">Acceptor</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="/share/contact/">Contact Us</a></li>
+        
+      
+        <li><a href="/share/registration/"><span class="glyphicon glyphicon-user"></span> SignUp</a></li>
+        <li><a href="/userregister/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>  
+    </div>
+  </div>
+</nav>
+
+     
+  <!-----------------------------------SLIDESHOW----------------------------------------->
+
+   <div class="container-fluid">
+        <div class="row" id="s-one">
+          <div lass="col-lg-12" id="s-two">
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                               <!-- Indicators -->
+                                   <ol class="carousel-indicators">
+                                       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                       <li data-target="#myCarousel" data-slide-to="1"></li>
+                                       <li data-target="#myCarousel" data-slide-to="2"></li>
+                                    </ol>
+
+                            <!-- Wrapper for slides -->
+                   <div class="carousel-inner">
+                      <div class="item active">
+                                <img src=" {%static 'share/images/notes5.png' %}" alt="Notes1" id="s-three">
+                      </div>
+
+                      <div class="item">
+                                <img src="{%static 'share/images/notes2.jpg' %}" alt="Notes2" id="s-four">
+                      </div>
+    
+                      <div class="item">
+                                <img src="{%static 'share/images/notes3.jpg' %}" alt="Notes3" id="s-five">
+                      </div>
+                    </div>
+
+                         <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                               <span class="sr-only">Next</span>
+                         </a>
+           </div>
+        </div>
+      </div>
+      </div>
+
+            <!--------------------------------QUOATATION---------------------------------->
+               <div class="container-fluid">
+       <div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 2px;">
+          <div class="col-lg-12" style="height:100px;background: lightcoral;margin-top: 0px;">
+             <center style="font-size: 20px;font-style:oblique;margin-top:7px;color:black;"> Learn to light a candle in the darkest moments of someone’s life.<br> Be the light that helps others see; it is what gives <br> life its deepest significance.</center>
+
+          </div>
+    </div>
+  </div>
+          <!----------------------------------STATIC PAGE------------------------------------>
+        <div class="container-fluid ">
+    <div id="u-one">
+  
+  
+    <div class="row" id="u-two">
+         <div class="col-lg-12 col-md-12" id="u-three">
+          <h1 id="u-four"> Latest Notes:</h1>
+        </div>
+       
+    </div>
+<div class="row" id="u-five">
+  <div class="col-lg-2 col-md-4 " id="u-six">
+     <img src="{% static 'share/images/c.jpg' %}" alt="C Programming" height="190px" width="95%" id="u-seven">
+      <p id="u-eight">C PROGRAMMING</p>
+         <input type="button" value="View" id="u-nine" data-toggle="modal" data-target="#view1">
+    
+     </div>
+     <div class="col-lg-2 col-md-4" id="u-ten">
+         <img src="{% static 'share/images\dbms.jpg' %}" alt="dbms" height="190px" width="95%" id="u-eleven">
+         <p id="u-twelve">DBMS</p>
+         <input type="button" value="View" id="u-thirteen" data-toggle="modal" data-target="#view2">
+
+    
+       </div>
+
+        <div class="col-lg-2 col-md-4" id="u-fourteen">
+         <img src="{% static 'share/images\C++.jpg' %}"  alt="c++" height="190px" width="95%" id="u-fifteen">
+         <p id="u-sixteen">C++</p>
+         <input type="button" value="View" id="u-seventeen" data-toggle="modal" data-target="#view3">
+    
+       </div>
+
+        <div class="col-lg-2 col-md-4" id="u-eighteen">
+         <img src=" {% static 'share/images\java.jpg' %}"  alt=" java" height="190px" width="95%" id="u-nineteen">
+         <p id="u-twenty">JAVA</p>
+         <input type="button" value="View" id="u-twenty-one" data-toggle="modal" data-target="#view4">
+    
+       </div>
+   
+      <div class="col-lg-2 col-md-4" id="u-twenty-two">
+        <img src="{% static 'share/images/DS.jpg' %}" alt="ds" height="190px" width="95%" id="u-twenty-three">
+         <p id="u-twenty-four">DS</p>
+         <input type="button" value="View" id="u-twenty-five" data-toggle="modal" data-target="#view5">
+    
+       </div>
+      <div class="col-lg-2 col-md-4" id="u-twenty-six">
+        <img src="{% static 'share/images/\html.jpg' %}" alt="html" height="190px" width="95%" id="u-twenty-seven">
+         <p id="u-twenty-eight">HTML</p>
+         <input type="button" value="View" id="u-twenty-nine" data-toggle="modal" data-target="#view6">
+    
+       </div>
+   
+
+</div>
+  <div class="row" id="u-thirty">
+    <div class="col-lg-12 col-md-12" id="u-thirty-one">
+          <center>
+           <button class="bton-2 button1" id="u-thirty-two"> <a href="/share/more">More</a></button>
+            
+</center>
+    </div>
+  </div>
+</div>
+</div>
+  
+                 <!-----------------------------MAP $ GALLERY--------------------------------->
+
+
+   <div class="container-fluid">
+     <div class="row" style="margin-right:0px;margin-left:0px;margin-top: 15px;">
+        <div class="col-lg-8 col-md-8" style="height:520px;background:skyblue;padding: 0px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.661453812504!2d80.3254350146689!3d26.434399583335995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c472fd76f5993%3A0x36a981140ad9b5ca!2sEtech%20institute!5e0!3m2!1sen!2sin!4v1598168255980!5m2!1sen!2sin" width="100%" height="520px" frameborder="0" style="border:0; padding:0px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ 
+        </div>
+        <div class="col-lg-4 col-md-4" style="height:520px;background:skyblue;">
+
+          <div class="col-lg-12 col-md-12" style="height:160px;margin-top: 19px;">
+            
+           <img src="{% static 'share/images/add1.jpg' %} " alt="advertisement" height="130px" width="100%">
+            <div class="row">
+              <div class="col-lg-10 col-md-10"></div>
+              <div class="col-lg-2 col-md-2">
+                <a href="https://www.w3schools.com/html/">
+                <i class="fa fa-arrow-right" style="text-align: right;margin-top:-2px;"></i>
+                </a>
+              </div>
+            </div>
+           
+            
+
+
+          </div>
+           <div class="col-lg-12 col-md-12" style="height:160px;margin-top: 2px;">
+            <img src="{% static 'share/images/add2.jpg' %}" alt="advertisement" height="130px" width="100%">
+              <div class="col-lg-10 col-md-10"></div>
+              <div class="col-lg-2 col-md-2">
+             <a href="https://www.youtube.com/watch?v=pxA3kRG78-M&list=PLUYUs4r2zEPwZpH765hXmrTowYiLbis62">
+               <i class="fa fa-arrow-right" style="text-align: right;margin-top:-2px;"></i>
+               </a>
+           </div>
+         </div>
+            <div class="col-lg-12 col-md-12" style="height:160px;margin-top: 2px;">
+             <img src="{% static 'share/images/add4.jpg' %}" alt="advertisement" height="130px" width="100%">
+               <div class="col-lg-10 col-md-10"></div>
+              <div class="col-lg-2 col-md-2">
+             <a href="https://www.youtube.com/watch?v=wHPzpOX2vo8&list=PLLYz8uHU480i1pSs2w_Vzp671ea95PeWY">
+                <i class="fa fa-arrow-right" style="text-align: right;margin-top:-2px;"></i>
+                </a>
+            </div>
+              </div>  
+     
+    </div>
+    </div>
+  </div>
+
+    <!-----------------------------------------PRODUCT SLIDER---------------------------------------->
+
+  <div class="container-fluid">
+<div class="row" id="one">
+          <div class="col-lg-12" id="two">
+            <div class="col-lg-12 col-md-12 col-sm-12" id="three">
+        <center id="four">Top Current Users<br>
+          <i id="five">It helps students “ to become more confident <br>and they thought the opportunities to share took their learning to a whole new level.”</i>
+        </center>
+
+      
+      </div>
+
+    
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                              
+                            <!-- Wrapper for slides -->
+                   <div class="carousel-inner">
+ <div class="item active">
+     <div class="row" id="six">
+
+       <div class="col-lg-2 col-md-4 col-sm-3" id="seven">
+        <img src="{% static 'share/images/stuff1.jpg' %}" alt="image1" height="190px" width="90%" id="eight">
+       <p id="nine">Sonal Rajput</p>
+        </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="ten">
+        <img src="{% static 'share/images/stuff10.jpg' %}" alt="image2" height="190px" width="95%" id="eleven">
+          <p id="twelve">Aditya Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="thirteen">
+        <img src="{% static 'share/images/stuff3.jpg' %}" alt="image3" height="190px" width="95%" id="fourteen">
+        <p id="fifteen">Riya Sharma</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="sixteen">
+        <img src="{% static 'share/images/stuff4.jpg' %}" alt="image4" height="190px" width="90%" id="seventeen">
+          <p id="eighteen">Aadhya Pandey</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="nineteen">
+        <img src="{% static 'share/images/stuff9.jpg' %}"alt=" image5" height="190px" width="95%" id="twenty">
+         <p id="twenty-one">Aman Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="twenty-two">
+        <img src="{% static 'share/images/\stuff6.jpg' %}" alt="image6" height="190px" width="95%" id="twenty-three">
+        <p id="twenty-four">Priya Shukla</p>
+       
+       </div>
+     </div>
+
+  </div>
+
+                      <div class="item">
+                               <div class="row" id="twenty-five">
+       <div class="col-lg-2 col-md-4 col-sm-3" id="twenty-six">
+        <img src="{% static 'share/images/stuff7.jpg' %}" alt="image7" height="190px" width="95%" id="twenty-seven">
+        <p id="twenty-eight">Bhavya Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="twenty-nine">
+        <img src="{% static 'share/images/stuff8.jpg' %}" alt="image8" height="190px" width="95%" id="thirty">
+         <p id="thirty-one">Palak Tiwari</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="thirty-two">
+        <img src="{% static 'share/images/stuff9.jpg' %}" alt="image9" height="190px" width="95%" id="thirty-three">
+          <p id="thirty-four">Aman Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="thirty-five">
+        <img src="{% static 'share/images/\stuff2.jpg' %}" alt="image10" height="190px" width="95%" id="thirty-six">
+           <p id="thirty-seven">Yuktika Mishra</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="thirty-eight">
+        <img src="{% static 'share/images/stuff3.jpg' %}" alt="image11" height="190px" width="95%" id="thirty-nine">
+         <p id="fourty">Riya Sharma</p>
+        
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fourty-one">
+        <img src="{% static 'share/images/stuff10.jpg' %}" alt=" image12" height="190px" width="95%" id="fourty-two">
+          <p id="fourty-three">Aman Gupta</p>
+       
+       </div>
+     </div>
+                      </div>
+    
+      <div class="item">
+                       <div class="row" id="fourty-four">
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fourty-five">
+        <img src="{% static 'share/images/stuff10.jpg' %}" alt="image13" height="190px" width="95%" id="fourty-six">
+       <p id="fourty-seven">Aditya Singh</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fourty-eight">
+        <img src="{% static 'share/images/stuff6.jpg' %}" alt="image14" height="190px" width="95%" id="fourty-nine">
+        <p id="fifty">Priya Shukla</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fifty-one">
+        <img src="{% static 'share/images/stuff7.jpg' %}" alt="image15" height="190px" width="95%" id="fifty-two">
+       <p id="fifty-three">Bhavya Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fifty-four">
+        <img src="{% static 'share/images/stuff4.jpg' %}" alt="image15" height="190px" width="95%" id="fifty-five">
+         <p id="fifty-six">Aditi Singh</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="fifty-seven">
+        <img src="{% static 'share/images/stuff10.jpg' %}" alt="image15" height="190px" width="95%" id="fifty-eight">
+          <p id="fifty-nine">Aman Gupta</p>
+       
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-3" id="sixty">
+        <img src="{% static 'share/images/stuff2.jpg' %}" alt="image15" height="190px" width="95%" id="sixty-one">
+          <p id="sixty-two">Yuktika Mishra</p>
+       
+       </div>
+       
+     </div>
+   
+                      </div>
+                    </div>
+                    <div class="row" id="sixty-three">
+ <div class="col-lg-5 col-md-5 col-sm-4" id="sixty-four"></div>
+    <div class="col-lg-2 col-md-2 col-sm-5 " id="sixty-five">
+      
+     <a href="/share/explore/"> <button class="btn-2" id="sixty-six">Explore All</button> 
+    </a>
+
+    </div>
+    <div class="col-lg-5 col-md-5" id="sixty-seven"></div> 
+    </div>
+
+
+                        
+           </div>
+        </div>
+      </div>
+  </div>
+      
+
+               <!----------------------------------Footer---------------------------------->
+
+  <div class="container-fluid">
+  <form>
+    <div class="row" id="f-one">
+      
+      
+        
+        <div class="col-lg-3 col-md-6" id="f-two">
+          <u><h4 id="f-three">About us</h4></u><br>
+            
+          <i id="f-four">The most impressive websites and app experiences are roooted in smart design. Developers write the code that makes websites work, and website development requires a different skill set and sensibilities from design.
+          </i>
+          <div id="f-five" ></div>
+          <center><a href="#" class="fa fa-facebook" id="f-six"></a>
+          <a href="#" class="fa fa-twitter" id="f-seven"></a>
+          <a href="#" class="fa fa-google" id="f-eight"></a></center>
+        
+      
+        </div>
+        
+        <div class="col-lg-3 col-md-6" id="f-nine">
+          <u><h4 id="f-ten">Get In Touch</h4></u><br>
+          <div class="row" id="f-eleven">
+          <div  class = " col-lg-1"id="f-twelve"></div>
+          <div  class = " col-lg-10"id="f-thirteen">
+
+          <i class="fa fa-map-marker" aria-hidden="true" id="f-fourteen"></i> <i id="f-fifteen">Kidwai Nagar, Kanpur</i><br>
+          <i class="fa fa-phone" id="f-sixteen"></i>
+            
+          <i id="f-seventeen"></i><i id="f-eighteen">98738789030</i><br>
+        <i class="fa fa-envelope" aria-hidden="true" id="f-nineteen"></i><i id="f-twenty">sakshinarang@gmail.com</i><br>
+          <i class="fa fa-clock-o" id="f-twenty-one"></i><i id="f-twenty-two">Mon-Fri, (9 A.M-10 P.M)</i>
+            
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-md-6" id="f-twenty-three">
+          <u><h4 id="f-twenty-four">Useful Links</h4></u><br>
+            <div class="row" id="f-twenty-five">
+          <div  class = " col-lg-2"id="f-twenty-six"></div>
+          <div  class = " col-lg-6"id="f-twenty-seven">
+
+
+          <i id="f-twenty-eight">
+            <ul type="circle" id="f-twenty-nine">
+          <li id="f-thirty"><a href="#" id="f-thirty-one">About us</a></li><br>
+          
+          <li id="f-thirty-two"><a href="/share/contact" id="f-thirty-three">Contact Us</a></li><br>
+      
+      
+          
+            <li id="f-thirty-four"><a href="/share/contribute" id="f-thirty-five">Contribution</a></li><br>
+          
+          <li id="f-thirty-six"><a href="/share/more" id="f-thirty-seven">Acceptor</a></li><br>
+        </ul>
+      </i>
+
+    
+          </div>
+        
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-6" id="f-thirty-eight">
+          <u><h4 id="f-thirty-nine">Latest Projects</h4></u><br>
+          <u><b id="f-fourty"> <video width="240" height="135" controls id="f-fourty-one">
+            <source src="{%static 'share/images/web development.mp4' %}" type="video/mp4">
+            </video>
+            </b></u><br>
+      
+        </div>
+
+
+        
+    
+        
+          
+          <div class="col-lg-12 col-md-12" style="height:10px;background:black  ;"></div>
+
+            <div class="col-lg-3 col-md-12" style="height:25px;background:black;">
+              <div style="font-style: oblique;font-size: 12px;margin: 4px;color: blue;float: left;">Foolish Developer<b style="margin:2px;font-size:12px;color:white">All Rights Deserved</b></div>
+            
+            </div>
+              <div class="col-lg-4 col-md-12" style="height:25px;background:black   ;"></div>
+
+              <div class="col-lg-1 col-md-12" style="height:25px;background:black;"></div>
+              <div class="col-lg-1 col-md-12" style="height:25px;background:black;"></div>
+              <div class="col-lg-3 col-md-12" style="height:25px;background:black;">
+                <center><b style="font-size:12px;color  :white;">About</b><i style="margin:12px;color: darkgrey;">|</i>
+                <b style="font-size:12px;color  :white  ;">Terms</b><i style="margin:12px;color: darkgrey;">|</i>
+                <b style="font-size:12px;color  :white  ;">Privacy</b><i style="margin:12px;color: darkgrey;">|</i>
+                <b style="font-size:12px;color  :white  ;">Contact</b>
+              </center>
+              </div>
+
+
+    </div>
+    </form>
+    </div>
+   
+
+
+                                      <!-------------- The Modal For View 1 ----------------->
+
+  <div class="modal" id="view1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+            <div class="col-lg-2 col-md-4 col-sm-1" style="background: no-repeat;"></div>
+            <div class="col-lg-7 col-md-7" style="height:40px;background: no-repeat;">
+
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">
+                C Programming
+        </center>
+        </div>
+       <div class="col-lg-3 col-md-3 col-sm-12">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images//c.jpg' %}" alt="image1" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-4" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top: 10px;"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top: 20px;"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-7" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:8px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:10px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:8px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:320px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:3px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">C is a general-purpose programming language developed at AT & T's Bell Telephone Laboratories (USA) in 1972 by Dennis Ritchie. Since it was originally designed for and implemented on the UNIX operating system, therefore, it is strongly associated with UNIX though nowadays it is running on almost all operating systems. Here are most common reasons why C is still so popular:
+        <div class="col-lg-12 col-md-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:30px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+                                   <!----------------- Modal for view 2------------------>
+
+ <div class="modal" id="view2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+            <div class="col-lg-3 col-sm-1" style="background: no-repeat;"></div>
+
+            <div class="col-lg-6 col-md-7" style="height:40px;background: no-repeat;">
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">
+                DBMS
+              </center>
+              
+        </div>
+       <div class="col-lg-3 col-sm-12">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images//dbms.jpg' %}" alt="dbms" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top: 20px;"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top: 20px;"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-7" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:8px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:320px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:3px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">A database management system (DBMS) is system software for creating and managing databases. A DBMS makes it possible for end users to create, protect, read, update and delete data in a database. The most prevalent type of data management platform, the DBMS essentially serves as an interface between databases and end users or application programs, ensuring that data is consistently organized and remains easily accessible.
+
+        <div class="col-lg-12 col-md-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:20px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                                          <!-------------- Modal for View 3 ------------------>
+
+       <div class="modal" id="view3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+             <div class="col-lg-3 col-md-3 col-sm-3" style="background: no-repeat;"></div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6" style="height:40px;background: no-repeat;">
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">C++
+              </center>
+              </div>
+       <div class="col-lg-3 col-md-3 col-sm-12">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images/C++.jpg' %}" alt="c++" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top: 20px;"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top: 20px;"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-2" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:10px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:18px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:334px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:0px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. Many vendors provide C++ compilers, including the Intel, and IBM.
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:20px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+                           <!-------------- Modal for View 4 ------------------>
+
+       <div class="modal" id="view4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+             <div class="col-lg-3 col-md-3 col-sm-3" style="background: no-repeat;"></div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6" style="height:40px;background: no-repeat;">
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">JAVA
+              </center>
+              
+        </div>
+       <div class="col-lg-3 col-md-3 col-sm-3">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+       <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images/java.jpg' %}" alt="java" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top:20px"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top:20px"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-7" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:10px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:18px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:320px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:3px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">Java is the foundation for virtually every type of networked application and is the global standard for developing and delivering embedded and mobile applications, games, Web-based content, and enterprise software. With more than 9 million developers worldwide, Java enables you to efficiently develop, deploy and use exciting applications and services.The best way we learn anything is by practice and exercise questions.
+
+        <div class="col-lg-12 col-md-12  col-sm-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:20px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+                           <!-------------- Modal for View 5 ------------------>
+
+       <div class="modal" id="view5">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+             <div class="col-lg-2 col-md-4 col-sm-3" style="background: no-repeat;"></div>
+
+            <div class="col-lg-7 col-sm-7" style="height:40px;background: no-repeat;">
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">DATA STRUCTURE
+              </center>
+              
+        </div>
+       <div class="col-lg-3 col-md-3 col-sm-12">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+      <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images/DS.jpg' %}" alt="ds" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top:20px"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top:20px"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-7" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:10px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:18px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:320px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:3px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">Data Structures in C are used to store data in an organised and efficient manner. The C Programming language has many data structures like an array, stack, queue, linked list, tree, etc. A programmer selects an appropriate data structure and uses it according to their convenience. Data structures and algorithms are not language specific and hence you can use any language be it JavaScript, C, C++, Java or Python. 
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:20px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+                                  <!-------------- Modal for View 6 ------------------>
+
+       <div class="modal" id="view6">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="row" style="margin-right:0px;margin-left: 0px;">
+            <div class="col-lg-3 col-md-3 col-sm-3" style="background: no-repeat;"></div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="height:40px;background: no-repeat;">
+              <center style="font-size: 30px; margin: 0px; background: linear-gradient( to right, #f32170, #ff6b08, #cf23cf, #eedd44); -webkit-text-fill-color: transparent; -webkit-background-clip: text; -moz-background-clip: text; background-clip: text;">HTML
+              </center>
+              
+        </div>
+       <div class="col-lg-3 col-md-3 col-sm-12">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+ 
+       </div>
+
+                 </div>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style="height:400px"> 
+          <div class="col-lg-5 col-md-5 col-sm-5"style="height:200px;background: red;margin-left:-3px;padding: 0px;">
+       <img src="{% static 'share/images/html.jpg' %}" alt="html" style="height:200px;width:100%;padding: 0px; box-shadow: 0px 0px 6px 6px;"> 
+        <div class="row" style="margin-right:0px;margin-left:0px">
+        <div class="col-lg-3 col-md-3 col-sm-3" style="height:130px;background:no-repeat;margin-top:10px">
+         <i class="fa fa-download" aria-hidden="true" style="color:black;"></i><br>
+         <i class="fa fa-user" aria-hidden="true" style="color:black;margin-top:20px"></i><br>
+         <i class="fa fa-phone" aria-hidden="true" style="color:black;margin-top:20px"></i>
+         </div>
+         <div class="col-lg-9 col-md-9 col-sm-7" style="height:130px;background:no-repeat;margin-top:10px">
+           <label style="margin-top:10px;font-size:15px;font-style:italic;color: black;">DOWNLOADS</label><br>
+           <label style="margin-top:20px;font-size:15px;font-style:italic;color: black;">USER</label><br>
+           <label style="margin-top:18px;font-size:15px;font-style:italic;color: black;">CONTACT NO</label>
+         </div>
+        </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-6" style="height:320px;background:black;margin-left: 20px;font-style: oblique;font-variant: small-caps;margin-top:3px ;">
+
+        <div style="font-family: Helvetica, sans-serif;text-align: justify;color: lightgoldenrodyellow;">HTML stands for Hyper Text Markup Language is used to create web pages as well as other types of documents viewable in a web browser. HTML is a standard specified and maintained by World Wide Web Consortium. From its invention, HTML has evolved through different versions. Present version of HTML is HTML 4.01. Next version of HTML is HTML 5, but developers have already started using some of its features.
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <center><button class="bton-2 button1" style="width:70%;background:burlywood;color: black;margin-top:20px"> More Details</button>
+        </center>
+
+        </div>
+        </div>
+        </div>        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+  

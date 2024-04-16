@@ -1,0 +1,32 @@
+<div class="container">
+ 
+
+
+  <!-- The Modal -->
+  <div class="modal" id="myModals">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       
+        <!-- Modal Header -->    
+        <!-- Modal body -->
+        <div class="modal-body" style="padding: 0px;">
+
+        <div class="signup-form">
+    <form action="register" method="post">
+  {% csrf_token %}
+  <input type="text" name="first_name" placeholder="Name1"></input><br>
+  <input type="text" name="last_name" placeholder="Name1"></input><br>
+  <input type="text" name="username" placeholder="username"></input><br>
+  <input type="email" name="email" placeholder="email"></input><br>
+  <input type="password" name="password1" placeholder="password"></input><br>
+  <input type="password" name="password2" placeholder="confirm password"><br>
+  <input type="submit"></input> 
+ </form>
+    
+       </div>
+        </div>   
+      </div>
+    </div>
+  </div>
+  
+</div>

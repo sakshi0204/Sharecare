@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main page</title>
+	  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+
+
+    <link rel 	="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+
+    
+</head>
+<body>
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+	<div class="col-lg-12 col-md-12 col-sm-12" style="height: 220px;background: beige;">
+		<img src="{% static 'share/images/notes2.png' %}" alt="notes2.png" style="height:220px;width:100%">
+	</div>
+</div>
+
+		<div class="row" style="margin-right:0px;margin-left:0px">
+		
+			<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top:20px"></div>
+			<div class="col-lg-2 col-md-2 col-sm-1" style="height:30px;background:no-repeat;margin-top:20px">
+				<label style="font-size:20px;">UserName</label>
+			</div>
+		</div>
+
+		<div class="row" style="margin-right: 0px;margin-left: 0px;">
+
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat;margin-top: 3px;">
+		<a href="/share/">
+		<i class="fa fa-arrow-left" style="text-align: right;margin-top: 3px;margin-left: 30px;"></i>
+		</a>
+	</div>
+
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;margin-top: 3px;">
+		<img src="{% static 'share/images/stuff1.jpg' %}" alt="stuff1" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;margin-top: 3px;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Sonal Rajput</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;margin-top: 3px;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;margin-top: 3px;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Jaipur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;margin-top: 3px;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<a href="/share/list_view/">
+			<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+		</a>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		
+		<a href="/share/{{data.id}}/update">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</a>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+	<a href="/share/{{data.id}}/delete">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</a>
+	</div>
+	
+</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff2.jpg' %}"  alt="stuff2"style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Yuktika Mishra</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Delhi</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff4.jpg' %}" alt="stuff4" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Aadhya Pandey</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Jaipur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff5.jpg' %}" alt="stuff5" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Adtiti Singh</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Lucknow</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff6.jpg' %}" alt="stuff6" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Priya Shukla</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Bihar</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff7.jpg' %}" alt="stuff7" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Bhavya Gupta</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Orissa</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff8.jpg' %}" alt="stuff8" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Palak Tiwari</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Kanpur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff9.jpg' %}" alt="stuff9" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Aman Gupta</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Banaras</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff10.jpg' %}" alt="stuff10" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Ankur Bansal</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Kanpur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff1.jpg' %}" alt="stuff1" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Sonal Rajput</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Jaipur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff2.jpg' %}" alt="stuff2" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Yuktika Mishra</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Delhi</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff4.jpg' %}" alt="stuff4" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Aadhya Pandey</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Jaipur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff5.jpg' %}" alt="stuff5" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Aditi Singh</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Lucknow</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff6.jpg' %}" alt="stuff6" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Priya Shukla</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Bihar</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff7.jpg' %}" alt="stuff7" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Bhavya Gupta</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Orissa</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff8.jpg' %}" alt="stuff8" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Palak Tiwari</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Kanpur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff10.jpg' %}" alt="stuff10" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Ankur Bansal</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Kanpur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 20px;">
+	
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background:no-repeat	;">
+		
+	</div>
+	
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height:150px;background: no-repeat; border-top:5px solid indianred; border-left:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-left-style: inset;border-bottom-style: inset;">
+		<img src="{% static 'share/images/stuff1.jpg' %}" alt="stuff1" style="height: 120px;width:70%;margin-top: 11px;margin-left: 10px;">
+
+	</div>
+	<div class="col-lg-2 col-md-2 col-sm-2	" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Sonal Rajput</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred;  border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">14/2/2021</label>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-2" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-bottom-style: inset;">
+		<label style="margin-top: 13px;margin-left: 30px; font-size: 17px;">Jaipur</label>
+	</div>
+
+<div class="col-lg-2 col-md-2 col-sm-3" style="height: 150px;background: no-repeat;border-top:5px solid indianred; border-right:5px solid indianred; border-bottom:5px solid indianred; border-top-style: inset;border-right-style: inset;border-bottom-style: inset;">
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 10px;">
+		<i class="fa fa-eye" aria-hidden="true" style="margin-left: -6px; margin-top:5px;color:black;font-size: 17px;"></i>
+	</div>
+
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-edit" style="margin-left: -6px; margin-top:12px;color:black; font-size: 17px;"></i>
+	</div>
+
+<div class="col-lg-1 col-md-1 col-sm-1" style="height:30px;background:no-repeat;margin-top: 5px;margin-left: 30px;">
+		<i class="fa fa-trash-o" aria-hidden="true" style="margin-left: -6px; margin-top:11px;color: black;font-size: 17px;"></i>
+	</div>
+
+	
+</div>
+	<div class="col-lg-1 col-md-1 col-sm-1" style="height: 20px;background: no-repeat;"></div>
+
+	
+</div>
+
+
+
+
+</body>
+</html>

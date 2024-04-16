@@ -1,0 +1,570 @@
+
+.r{
+  height: 150px;
+  margin:20px;
+  box-shadow: 2px 4px 3px 5px rgba(0,0,0,0.6);
+}
+.r1{
+  height: 100px;
+ text-align: center;
+  margin-top: 10px;
+
+
+}
+.btn1{
+  width: 170px;
+  padding-bottom: 5px;
+}
+.btn-info{
+  padding-top: 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width:100%;
+  height: 170px;
+  perspective: 1000px;
+  padding-bottom: 20px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+  
+  transform: rotateY(180deg);
+}
+
+.img-responsive{
+  height: 160px;
+  width: 100%;
+ 
+
+}
+.str{
+  padding-bottom: 10px;
+}
+
+.flip{
+  height: 30px;
+   margin:3px;
+   background-color: #EBF4FA;
+}
+
+.super{
+  width: 100%;
+ box-shadow: 5px 5px 8px 3px  rgb(0,0,0,0.5);
+
+}
+.super1{
+    box-shadow: 5px 5px 8px 3px  rgb(0,0,0,0.5);
+   height: 160px;
+   text-align: justify;
+}
+.col{
+  height:60px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.fa {
+  
+  color: red;
+  
+}
+
+
+
+
+
+
+.tcb-product-slider {
+  background: #333;
+  background-image: url(https://unsplash.it/1240/530?image=721);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.tcb-product-slider .carousel-control {
+  width: 5%;
+}
+.tcb-product-item a {
+  color: #147196;
+}
+.tcb-product-item a:hover {
+  text-decoration: none;
+}
+.tcb-product-item .tcb-hline {
+  margin: 10px 0;
+  height: 1px;
+  background: #ccc;
+}
+@media all and (max-width: 768px) {
+  .tcb-product-item {
+    margin-bottom: 30px;
+  }
+}
+.tcb-product-photo {
+  text-align: center;
+  height: 180px;
+  background: #fff;
+}
+.tcb-product-photo img {
+  height: 100%;
+  display: inline-block;
+}
+.tcb-product-info {
+  background: #f0f0f0;
+  padding: 15px;
+}
+.tcb-product-title h4 {
+  margin-top: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+
+}
+.tcb-product-title h4 a{
+   color: black;
+}
+.tcb-product-rating {
+  color: #acacac;
+}
+.tcb-product-rating .active {
+  color: #FFB500;
+}
+.tcb-product-price {
+  color: firebrick;
+  font-size: 18px;
+  color: black;
+}
+
+
+
+.details {
+    margin: 50px 0; }
+ .details h1 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 3px; }
+    .details .back-link {
+      text-align: center; }
+      .details .back-link a {
+        display: inline-block;
+        margin: 20px 0;
+        padding: 15px 30px;
+        background: #333;
+        color: #fff;
+        border-radius: 24px; }
+        .details .back-link a svg {
+          margin-right: 10px;
+          vertical-align: text-top;
+          display: inline-block; }
+
+
+
+   .form-control:focus {
+        border-color:none;
+        box-shadow: none;
+    }
+  .input-group {
+  margin-top: 10px;
+}
+  li
+  {
+    list-style-type: none;
+    position: relative;
+    padding-left: 15px;
+  }
+  li:before
+  {
+   
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+  }
+/*===========*/
+.responsive {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+/*===========*/
+
+
+
+.box{
+    flex: 1;
+    margin: 15px;
+    min-width: 300px;
+    padding-bottom: 3%;
+  }
+  .box h2{
+     text-transform: uppercase;
+     font-style: bold;
+     letter-spacing: 3px;
+     border-bottom: 2px solid #555; 
+     position: relative;
+     margin-bottom: 15px;
+      margin-bottom: 10%;
+       
+  }
+  .box h2:before{
+    content: "";
+    width: 100px;
+    height:35px;
+    border-bottom: 2px solid crimson;
+    position: absolute;
+    
+
+  }
+  .box a{
+    color: #aaa;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+  .box a i{
+    background: #333;
+    width:40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5px;
+    transition: 0.5s linear;
+    
+  }
+  .box a:hover,
+  .box a:hover i{
+    color: crimson;
+    border-radius: 50%;
+
+  }
+  .social{
+    margin-top: 5px;
+  }
+  .address a{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+  }
+
+    video {
+  max-width: 100%;
+  height: auto;
+}
+  form .inp,
+  form .text{
+      width: 100%;
+    min-height: 30px;
+    border:none;
+    outline: none;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+ 
+  form button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: crimson;
+    font:1.3em;
+    cursor: pointer;
+  }
+ footer{
+    width: 100%;
+    background: #222;
+    color: #aaa;
+
+  }
+
+
+
+
+
+  .button {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius:10px;
+  box-shadow: 0 7px #999;
+  height: 35px;
+}
+.btns {
+  display: inline-block;
+  padding: 3px 10px; 
+  font-size:18px ;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius:5px;
+  box-shadow: 0 7px #999;
+  height: 25px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+.bg-img{
+  background-image: url("../image/org.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   background-position: center;
+    position: relative;
+  
+min-height: 400px;
+
+}
+  .testimonials {
+  background-image: url("../image/textback2.png");
+  background-size: cover;
+  min-height: auto;
+  padding: 3em 0;
+  position: relative;
+  text-align: center;
+ 
+  margin: 5px;
+}
+.testmonials div.head-section {
+  margin-top: 1em;
+}
+.testimonial-nfo h3 {
+  font-family: 'Merriweather', serif;
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+
+}
+.testimonial-nfo h5 {
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 1em 0;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.testimonial-nfo h5 span{
+  display:block;
+}
+.testimonial-grid p {
+  font-size: 1.3em;
+  font-style: italic;
+  color: #FFF;
+  text-align: center;
+  
+  margin: auto;
+  font-weight: 400;
+}
+.testimonial-grid p span {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+/*
+    Note: It is best to use a less version of this file ( see http://css2less.cc
+    For the media queries use @screen-sm-min instead of 768px.
+    For .omb_spanOr use @body-bg instead of white.
+*/
+
+@media (min-width:1400px) {
+     div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+  line-height: 300%;
+}
+  
+.omb_login .omb_socialButtons a {
+  color: white; // In yourUse @body-bg 
+  opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+  opacity:1;      
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+  position: relative;
+  font-size: 1.5em;
+  color: #aaa;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+  background-color: #cdcdcd;
+  height: 1px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -0.6em;
+  margin-left: -1.5em;
+  background-color: white;
+  width: 3em;
+  text-align: center;
+}     
+
+.omb_login .omb_loginForm .input-group.i {
+  width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+  
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+    margin-top:10px;
+  }   
+}
+
+body {
+  color: #fff;
+  background: ;
+  font-family: 'Roboto', sans-serif;
+}
+.form-control {
+  height: 40px;
+  box-shadow: none;
+  color: #969fa4;
+}
+.form-control:focus {
+  border-color: #5cb85c;
+}
+.form-control, .btn {        
+  border-radius: 3px;
+}
+.signup-form {
+  
+   
+}
+.signup-form h2 {
+  color: #636363;
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+} 
+.signup-form h2:before {
+  left: 0;
+}
+.signup-form h2:after {
+  right: 0;
+}
+.signup-form .hint-text {
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.signup-form form {
+  color: #999;
+  border-radius: 3px;
+  
+  background: #f2f3f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+  margin-top: 3px;
+}
+.signup-form .btn {        
+  font-size: 16px;
+  font-weight: bold;    
+  min-width: 140px;
+  outline: none !important;
+}
+.signup-form .row div:first-child {
+  padding-right: 10px;
+}
+.signup-form .row div:last-child {
+  padding-left: 10px;
+}     
+.signup-form a {
+  color: #fff;
+  text-decoration: underline;
+}
+.signup-form a:hover {
+  text-decoration: none;
+}
+.signup-form form a {
+  color: #5cb85c;
+  text-decoration: none;
+} 
+.signup-form form a:hover {
+  text-decoration: underline;
+}  

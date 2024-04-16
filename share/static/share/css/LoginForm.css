@@ -1,0 +1,143 @@
+<style type="text/css">
+			
+#one{
+		margin-left:0px;margin-right:0px;
+}
+.two{
+	height:20px;
+}
+#three{
+	margin-left:0px;margin-right:0px;
+}
+#four{
+		height:23px;float: left;
+}
+#five{
+		height:23px;float: left;
+}
+#six{ height:23px;background: lightskyblue;float: left;border-top-width:thick; border-top-style:
+ inset;border-color:black;  border-right-width:thick; border-right-style: inset;border-color:black;
+ border-left-width:thick; border-left-style: inset;border-color:black;margin-top: 30px;
+  }
+#seven{
+	height: 0px;float: left;
+}
+#eight{
+	margin-left:0px;margin-right:0px;
+}
+#sak{
+	background: no-repeat;height: 2px;
+}
+#nine{
+	height:20px;float: left;background: no-repeat;
+}
+#qwerty{
+	text-align: right;margin-top:-7px;margin-left: 30px;color: black;
+}
+#ten{
+		height:320px;background: indianred;float: left;
+}
+#eleven{
+					color: black;padding: 118px;font-size: 32px;font-variant: small-caps;
+}
+#twelve{
+					height:370px;background: lightskyblue;float: left; border-right-width:thick; border-right-style: inset;border-color:black; border-bottom-width:thick; border-bottom-style: inset;border-color:black; border-left-width:thick; border-left-style: inset;border-color:black;
+}
+#thirteen{
+	font-size:16px;color:black;
+	}
+	#fourteen{
+		color: blue;font-size:17px;font-style:italic;margin:3px;
+
+	}
+	#fifteen{
+		border-radius: 50px;height: 30px;width: 60%;margin: 20px;
+	}
+	#sixteen{
+		border-radius: 50px;height: 30px;width: 60%;margin: 10px;
+	}
+		#seventeen{
+			color:blue;
+		}
+		#eighteen{
+					font-size:16px;color: blue;padding:20px;
+		}
+		#nineteen{
+					margin:15px;height:25px;width:46%;border-radius:50px;background-color:orange;
+		}
+		#twenty{
+						background-color:lightskyblue;height: 18px;
+		}
+		#twentyone{
+					height:18px;width:25%;background-color:lightskyblue;float:left;
+		}
+		#twentytwo{
+			margin:6px;width:91%;height:1px;background-color:black;color: black;
+
+		}
+		#twentythree{
+							height:18px;width:2%;background-color:lightskyblue;float:left;
+		}
+		#twentyfour{
+							height:18px;width:30%;background-color:lightskyblue;float:left;
+		}
+		#twentyfive{
+						font-size:13px;color:black;
+		}
+		#twentysix{
+							height:18px;width:1%;background-color:lightskyblue;float:left;
+		}
+		#twentyseven{
+			height:18px;width:25%;background-color:lightskyblue;float:left;
+		}
+		#twentyeight{
+			margin:6px;width:91%;height:1px;background-color:black;color:black;
+		}
+		#twentynine{
+							height:10px;background:lightskyblue;
+		}
+		#thirty{
+			margin:10px;
+		}
+		#thirtyone{
+			margin:10px;
+		}
+		#thirtytwo{
+			margin:10px;
+		}
+		#thirtythree{
+			height:320px;background: indianred	;float: left;
+		}
+		#thirtyfour{
+			height:320px;float: left;
+		}
+		.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 34px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+		</style>
+	

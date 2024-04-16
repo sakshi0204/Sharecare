@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'share/css/indexstyle.css' %}">
+    <style type="text/css"></style>
+</head>
+<body>
+  <form action="register" method="post">
+             {% csrf_token %}      
+
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+  <div class="col-lg-12 col-md-12" style="height: 20px;background:none;"></div>
+  <div class="col-lg-1" style="height: 1px;background: no-repeat;"></div>
+  <div class="col-lg-1 col-md-3" style="height:23px;background: no-repeat;"><a href="/share/">
+    <i class="fa fa-arrow-left" style="text-align: right;margin-top:5px;margin-left: 30px;"></i></a>
+  </div>
+  <div class="col-lg-4 col-md-5" style="background-image: url('{% static 'share/images/web.jpg' %}');height: 550px;background-size: 100% 100%;"></div>
+  <div class="col-lg-3 col-md-3" style="height:550px;background:#b3b3b3;">
+
+    <div class="col-lg-12" style="background:#b3b3b3;height: 20px;"></div>
+    <div class="col-lg-12" style="font-style: oblique;font-size: 23px;margin-left:-15px;"> Register Now</div>
+    <div class="col-lg-12" style="margin-top:14px;"></div>
+    <label style="margin-top:10px;font-size: 14px;" >First Name</label>
+    <input type="text" name="first_name" placeholder="first_name" required="required" style="border: none; outline: none;border-bottom: 2px solid black; background: no-repeat;width: 100%;" >
+    <label style="margin-top:10px;font-size: 14px;" >Last Name</label>
+    <input type="text" name="last_name"  placeholder="last_name" required="required" style="border: none; outline: none;border-bottom: 2px solid black; background: no-repeat;width: 100%;" >
+    
+    <label style="margin-top:23px;font-size: 14px;" >UserName</label>
+    <input type="text" name="username"  placeholder="username" required="required" style="border: none; outline: none;border-bottom: 2px solid black;background: no-repeat;width: 100%;" >
+
+    <label style="margin-top:23px;font-size: 14px;" >Email</label>
+    <input type="text" name ="email" placeholder=" Email" required="required" style="border: none; outline: none;border-bottom: 2px solid black;background: no-repeat;width: 100%;" >
+
+     
+    <label style="font-size: 14px;margin-top: 23px;" >Password</label>
+    <input type="password" name="password1" placeholder="password1" required="required" style="border: none; outline: none;border-bottom: 2px solid black;background: no-repeat;width: 100%;" >
+    
+    <label style="font-size: 14px;margin-top: 23px;" >Confirm Password</label>
+    <input type="password" name="password2" placeholder="password2" required="required" style="border: none; outline: none;border-bottom: 2px solid black;background: no-repeat;width: 100%;" >
+
+      
+    <center > 
+      <input  type="submit" name="signup" value="Signup" style="background-image: linear-gradient(190deg, #ff6666, #ff99cc);width: 50%;margin-top: 15px;font-style: oblique; font-size: 15px;"></input>
+    </center>
+
+        <center><p style="font-size:15px;color: blue;margin-top: 10px;font-style: italic;"> Already Registered? <a href="/share/login/" style="color: blue;">SignIn</a></p></center>
+
+
+        
+
+
+    
+    
+  
+  </div>
+
+</div>
+</form>
+</body>
+</html>
